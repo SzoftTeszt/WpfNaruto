@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="WpfNaruto.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfNaruto.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Home"
+                   Foreground="White"
+                   FontSize="20"
+                   Margin="0,0,0,20"/>
+       
+        <StackPanel Orientation="Horizontal">               
+                <Border Width="400" Height="200" CornerRadius="20">
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Gray" Offset="0"/>
+                            <GradientStop Color="LightBlue" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+               
+                
+                <Border Width="200" Height="200" Margin="50,0,0,0" CornerRadius="20">
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Orange" Offset="0"/>
+                            <GradientStop Color="Gray" Offset="1"/>
+                     
+                        </LinearGradientBrush>
+                    </Border.Background>
+                
+                </Border>
+            </StackPanel>
+        <Grid HorizontalAlignment="Left">
+            
+            <Image Source="/Images/img6.png" Margin="-120,-200,0,100" Width="250"/>
+            
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                <Border Width="150" Height="150" Margin="0,0,20,0" CornerRadius="20" Background="Purple"/>
+                <Border Width="150" Height="150" Margin="0,0,20,0" CornerRadius="20" Background="Blue"/>
+                <Border Width="150" Height="150" Margin="0,0,20,0" CornerRadius="20" Background="LightGreen"/>
+                <Border Width="150" Height="150" Margin="0,0,20,0" CornerRadius="20" Background="Yellow"/>
+
+
+
+            </StackPanel>
+        </Grid>
+
+        
+    </StackPanel>
+</UserControl>
